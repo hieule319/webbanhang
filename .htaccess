@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteRule "index.html" "index.php"
+
+RewriteRule "^nha-cung-cap/([a-zA-Z]+).html$" "?controller=nha-cung-cap&action=$1"
+RewriteRule "^nha-cung-cap/([a-zA-Z]+)/([0-9]+).html$" "?controller=nha-cung-cap&action=$1&msncc=$2"
+RewriteRule "^nha-cung-cap/([a-zA-Z]+)/([0-9]+).html$" "?controller=nha-cung-cap&action=$1&page=$2"
+
+RewriteRule "^mat-hang/([a-zA-Z]+).html$" "?controller=mat-hang&action=$1"
+RewriteRule "^mat-hang/([a-zA-Z]+)/([0-9]+).html$" "?controller=mat-hang&action=$1&mahanghoa=$2"
+RewriteRule "^mat-hang/([a-zA-Z]+)/([0-9]+).html$" "?controller=mat-hang&action=$1&page=$2"
+
+RewriteRule "^kho-hang/([a-zA-Z]+).html$" "?controller=kho-hang&action=$1"
+RewriteRule "^kho-hang/([a-zA-Z]+)/([0-9]+).html$" "index.php?controller=kho-hang&action=$1&machitietnhap=$2"
+RewriteRule "^kho-hang/([a-zA-Z]+)/([0-9]+).html$" "?controller=kho-hang&action=$1&page=$2"
+
+RewriteRule "^thong-ke/([a-zA-Z]+).html$" "?controller=thong-ke&action=$1"
+RewriteRule "^thong-ke/([a-zA-Z]+)/([0-9]+).html$" "index.php?controller=thong-ke&action=$1&mahoadon=$2"
+RewriteRule "^thong-ke/([a-zA-Z]+)/([0-9]+).html$" "?controller=thong-ke&action=$1&page=$2"
+
+RewriteRule "^ban-hang/([a-zA-Z]+).html$" "?controller=ban-hang&action=$1"
+
+RewriteRule "^nhan-vien/([a-zA-Z]+).html$" "?controller=nhan-vien&action=$1"
+RewriteRule "^nhan-vien/([a-zA-Z]+)/([0-9]+).html$" "?controller=nhan-vien&action=$1&manhanvien=$2"
+RewriteRule "^nhan-vien/([a-zA-Z]+)/([0-9]+).html$" "?controller=nhan-vien&action=$1&page=$2"
